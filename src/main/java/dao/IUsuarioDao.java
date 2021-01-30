@@ -1,5 +1,8 @@
 package dao;
 
-public interface IUsuarioDao {
+import org.springframework.data.repository.CrudRepository; 
+import entities.Usuario;  
+public interface IUsuarioDao extends CrudRepository<Usuario, Long> { 
 
-}
+} 
+

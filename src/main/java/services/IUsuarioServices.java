@@ -1,5 +1,10 @@
 package services;
 
-public interface IUsuarioServices {
+import java.util.List;
 
-}
+import entities.Usuario; 
+public interface IUsuarioServices { 
+	public List<Usuario> findAll(); 
+	public Usuario create(Usuario usuario); 
+} 
+
